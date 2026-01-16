@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0079bf;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.board {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.list {
+  background: #ebecf0;
+  padding: 10px;
+  width: 250px;
+  border-radius: 6px;
+}
+
+.card {
+  background: white;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: grab;
+}

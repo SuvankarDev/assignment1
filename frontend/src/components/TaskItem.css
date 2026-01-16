@@ -1,0 +1,72 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.task-item:hover {
+  background-color: #f3f4f6;
+}
+
+.task-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #4f46e5;
+}
+
+.task-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-name {
+  font-size: 20px;
+  color: #111827;
+}
+
+.task-date {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* Completed task */
+.task-completed .task-name {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Urgent task */
+.task-urgent {
+  border-left: 4px solid #ef4444;
+}
+
+.task-urgent .task-name {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Urgent button */
+.urgent-button {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.urgent-button:hover {
+  background-color: #fecaca;
+}
+
+.urgent-button:active {
+  transform: scale(0.96);
+}
